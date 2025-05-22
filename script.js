@@ -29,8 +29,9 @@ function escapeHtml(text) {
 function setHeader(id) {
   const headerDiv = document.getElementById('header');
   const headers = {
-    'STE': 'Sucrerie de Sainte-Emilie<br>Route Épehy<br>80240 VILLERS-FAUCON',
-    'SIL': 'Sucrerie de Sillery<br>Route de Châlons<br>51500 SILLERY'
+    'A': 'A',
+    'B': 'B',
+    'C': 'C'
   };
 
   const cleanId = id ? id.toUpperCase().substring(0, 3) : '';
