@@ -37,8 +37,6 @@ function fillFields() {
       el.textContent = escapeHtml(params[id]) || '-';
     }
   });
-
-  setHeader(params['id']);
 }
 
 // Fonction capture écran qui cache le bouton avant la capture
