@@ -25,28 +25,11 @@ function escapeHtml(text) {
   });
 }
 
-// Affiche l'en-tête personnalisé selon le paramètre id
-function setHeader(id) {
-  const headerDiv = document.getElementById('header');
-  const headers = {
-    'A': 'A',
-    'B': 'B',
-    'C': 'C'
-  };
-
-  const cleanId = id ? id.toUpperCase().substring(0, 3) : '';
-  if (headers[cleanId]) {
-    headerDiv.innerHTML = headers[cleanId];
-  } else {
-    headerDiv.innerHTML = '';
-  }
-}
-
 // Remplit les champs avec les valeurs sécurisées
 function fillFields() {
   const params = getUrlParams();
 
-  const fields = ['tn', 'en', 'de', 'he', 'ep', 'sn', 'ds', 'hs', 'sp', 'pn'];
+  const fields = ['ad', 'tn', 'en', 'de', 'he', 'ep', 'sn', 'ds', 'hs', 'sp', 'pn'];
 
   fields.forEach(id => {
     const el = document.getElementById(id);
