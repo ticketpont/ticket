@@ -34,7 +34,7 @@ function fillFields() {
   fields.forEach(id => {
     const el = document.getElementById(id);
     if (el) {
-      el.textContent = escapeHtml(params[id]) || '';
+      el.textContent = escapeHtml(params[id]) || '-';
     }
   });
 }
