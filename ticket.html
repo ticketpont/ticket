@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ticket de Pesée</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <div class="container">
+    <div class="ticket">
+      <div id="header" class="header"></div>
+      <h1>Ticket de pesée</h1>
+      <table>
+        <tr><td>Numéro de transaction</td><td id="tn"></td></tr>
+        <tr><td colspan="2">&nbsp;</td></tr>
+        <tr><td>Numéro entrée</td><td id="en"></td></tr>
+        <tr><td>Date entrée</td><td id="de"></td></tr>
+        <tr><td>Heure entrée</td><td id="he"></td></tr>
+        <tr><td>Poids entrée</td><td><span id="ep"></span> kg</td></tr>
+        <tr><td colspan="2">&nbsp;</td></tr>
+        <tr><td>Numéro sortie</td><td id="sn"></td></tr>
+        <tr><td>Date sortie</td><td id="ds"></td></tr>
+        <tr><td>Heure sortie</td><td id="hs"></td></tr>
+        <tr><td>Poids sortie</td><td><span id="sp"></span> kg</td></tr>
+        <tr><td colspan="2">&nbsp;</td></tr>
+        <tr><td class="net-weight">Poids net</td><td class="net-weight"><span id="pn"></span> kg</td></tr>
+        <tfoot>
+          <tr>
+            <td colspan="2" class="footer">
+              <button id="screenshotBtn">Télécharger le ticket</button>
+            </td>
+          </tr>
+        </tfoot>
+      </table>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/html2canvas@1.4.1/dist/html2canvas.min.js" crossorigin="anonymous"></script>
+  <script src="js/script.js"></script>
+</body>
+</html>
