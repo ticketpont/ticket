@@ -1,0 +1,73 @@
+body {
+  font-family: monospace;
+  background-color: #f9f9f9;
+  padding: 1em;
+  display: flex;
+  justify-content: center;
+}
+
+#ticket {
+  background: white;
+  border: 1px dashed black;
+  padding: 1em;
+  width: 100%;
+  max-width: 360px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.header {
+  text-align: center;
+  white-space: pre-wrap;
+  font-size: 0.9em;
+  margin-bottom: 0.5em;
+}
+
+.ticket-title {
+  text-align: center;
+  font-size: 1.2em;
+  margin: 0.5em 0 1em;
+  font-weight: bold;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 1em;
+}
+
+td {
+  padding: 4px 0;
+}
+
+.highlight td {
+  font-weight: bold;
+  font-size: 1.1em;
+}
+
+.footer {
+  text-align: center;
+}
+
+button {
+  padding: 0.5em 1em;
+  font-size: 1em;
+  background-color: black;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+button:hover {
+  background-color: #333;
+}
+
+@media screen and (max-width: 480px) {
+  body {
+    padding: 0.5em;
+  }
+
+  #ticket {
+    padding: 0.5em;
+  }
+}
