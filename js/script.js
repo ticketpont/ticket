@@ -15,6 +15,10 @@ document.addEventListener("DOMContentLoaded", () => {
     { key: "ds", label: "Date sortie" },
     { key: "hs", label: "Heure sortie" },
     { key: "ps", label: "Poids sortie (kg)", blankAfter: true },
+    { key: "in", label: "Identifiant" },
+    { key: "nn", label: "Numéro" },
+    { key: "dn", label: "Date" },
+    { key: "hn", label: "Heure" },
     { key: "pn", label: "Poids net (kg)", highlight: true }
   ];
 
